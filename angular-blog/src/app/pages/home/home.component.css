@@ -1,12 +1,54 @@
-.container__articles{
+/* Estilos padrão */
+.container__articles {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between; /* Espaçamento uniforme entre as seções */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha em telas pequenas */
 }
 
-header{
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
+
+
+/* Estilos para telas pequenas (até 600px de largura) */
+@media screen and (max-width: 300px) {
+    .container__articles {
+        flex-direction: column;
+        align-items: center; /* Centraliza os elementos quando empilhados verticalmente */
+    }
+
+    .article__main,
+    .article__others {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* Estilos para telas médias e grandes (de 601px em diante) */
+@media screen and (min-width: 601px) {
+    .article__main {
+        flex: 2;
+        order: 1; /* Define a ordem em que aparece (main antes dos others) */
+    }
+
+    .article__others {
+        flex: 1;
+        order: 2; /* Define a ordem em que aparece (others depois do main) */
+    }
+
+    /* Centralize os cards quando a tela estiver grande */
+    .article__main app-big-card,
+    .article__others app-small-card {
+        margin: 0 auto; /* Centralize os elementos */
+        display: flex; /* Garante que eles ocupem a largura total disponível */
+        max-width: 300px; /* Defina um máximo para evitar que fiquem muito largos */
+    }
+}
+/* Estilos para telas grandes (acima de 1000px de largura até 3500px) */
+@media screen and (min-width: 1001px) and (max-width: 3500px) {
+    .article__main app-big-card,
+    .article__others app-small-card {
+        margin: 0 auto; /* Centralize os elementos horizontalmente */
+        display: flex; /* Garante que eles ocupem a largura total disponível */
+        max-width: 400px; /* Defina um máximo para evitar que fiquem muito largos */
+    }
 }

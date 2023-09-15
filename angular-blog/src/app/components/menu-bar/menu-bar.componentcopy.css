@@ -1,0 +1,31 @@
+/* Estilos para telas pequenas (até 600px de largura) */
+@media screen and (max-width: 300px) {
+  .big-card__photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para telas pequenas (de 301px a 700px de largura) */
+@media screen and (min-width: 301px) and (max-width: 700px) {
+  .big-card__photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para telas médias (de 701px a 1000px de largura) */
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .big-card__photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para telas grandes (de 1001px a 3500px de largura) */
+@media screen and (min-width: 1001px) and (max-width: 3500px) {
+  .big-card__photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}

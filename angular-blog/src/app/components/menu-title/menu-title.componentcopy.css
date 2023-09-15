@@ -1,0 +1,27 @@
+/* Estilos para telas pequenas (até 600px de largura) */
+@media screen and (max-width: 300px) {
+    .menu__title__container >h1{
+        font-size:10px;
+    }
+}
+
+/* Estilos para telas pequenas (até 600px de largura) */
+@media screen and (min-width: 301px) and (max-width: 700px) {
+    .menu__title__container >h1{
+        font-size:20px;
+    }
+}
+
+/* Estilos para telas médias (de 601px a 1000px de largura) */
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+.menu__title__container >h1{
+        font-size:30px;
+    }
+}
+
+
+@media screen and (min-width: 1001px) and (max-width: 3500px) {
+    .menu__title__container >h1{
+            font-size:50px;
+        }
+    }

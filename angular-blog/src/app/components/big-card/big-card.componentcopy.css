@@ -1,0 +1,78 @@
+/* Estilos padrão */
+.container__big-card {
+  font-size: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.big-card__photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.big-card__title {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.big-card__description {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para telas pequenas (até 600px de largura) */
+@media screen and (max-width: 600px) {
+  .container__big-card {
+    font-size: 14px;
+  }
+  .big-card__title {
+    font-size: 18px;
+  }
+  .big-card__description {
+    font-size: 16px;
+  }
+  .big-card__photo img {
+    max-width: 100%; /* Reduz a largura máxima da imagem para 100% da largura do contêiner */
+    height: auto;
+  }
+}
+
+/* Estilos para telas médias (de 601px a 1000px de largura) */
+@media screen and (min-width: 301px) and (max-width: 1000px) {
+  .container__big-card {
+    font-size: 18px;
+  }
+  .big-card__title {
+    font-size: 22px;
+  }
+  .big-card__description {
+    font-size: 20px;
+  }
+  .big-card__photo img {
+    max-width: 100%; /* Reduz a largura máxima da imagem para 100% da largura do contêiner */
+    height: auto;
+  }
+}
+
+/* Estilos para telas grandes (acima de 1000px de largura) */
+@media screen and (min-width: 1001px) and (max-width: 3500px) {
+  .container__big-card {
+    font-size: 20px;
+  }
+  .big-card__title {
+    font-size: 28px;
+  }
+  .big-card__description {
+    font-size: 24px;
+  }
+  .big-card__photo img {
+    max-width: 100%; /* Reduz a largura máxima da imagem para 100% da largura do contêiner */
+    height: auto;
+  }
+}

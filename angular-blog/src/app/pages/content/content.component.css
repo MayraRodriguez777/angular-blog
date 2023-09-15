@@ -1,0 +1,25 @@
+.container__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%h;
+    height: 100vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+
+}
+
+
+.content__cover > img{
+    width: 400px;
+    height: 200px;
+
+
+}
+
+.content__description > p {
+    color: gray;
+}
